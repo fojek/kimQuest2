@@ -37,6 +37,8 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="tableaux.cpp" />
+		<Unit filename="tableaux.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
