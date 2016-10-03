@@ -19,17 +19,17 @@ typedef struct
 
 int main()
 {
-    // Fonctions
-    int dessinerTableau(TABLEAU); // Fonction pour dessiner un tableau
+    /// Fonctions
+    int dessinerTableau(TABLEAU); /// Fonction pour dessiner un tableau
     int chargerTableaux(TABLEAU *);
     void effacerEcran();
     int effectuerAction(TABLEAU *, int, int);
 
-    // Constantes
+    /// Constantes
     const COORD POS_ACTION = {10,25};
     const int TABLEAU_DEPART = 1;
 
-    // Variables
+    /// Variables
     int tableauActuel;
     int choix;
 
@@ -37,11 +37,11 @@ int main()
 
     tableauActuel = TABLEAU_DEPART;
 
-    // 1. Charger les tableaux en mémoire
+    /// 1. Charger les tableaux en mémoire
     chargerTableaux(tableau);
 
-    // 2. Algorithme du jeu :
-    //  2.1 Afficher le tableau
+    /// 2. Algorithme du jeu :
+    ///  2.1 Afficher le tableau
     do
     {
         dessinerTableau(tableau[tableauActuel]);
@@ -54,12 +54,12 @@ int main()
 
 int effectuerAction(TABLEAU * tabl, int tablActuel, int chx)
 {
-    // Cas spécial, pour un tableau sans choix
+    /// Cas spécial, pour un tableau sans choix
     if(tabl[tablActuel].lienChoix[0])
         return tabl[tablActuel].lienChoix[0];
 
-    // On vérifie si le choix existe au tabl actuel
-    // Si !=0, on assigne le nouveau tabl
+    /// On vérifie si le choix existe au tabl actuel
+    /// Si !=0, on assigne le nouveau tabl
     switch (chx)
     {
     case 1:
@@ -76,7 +76,7 @@ int effectuerAction(TABLEAU * tabl, int tablActuel, int chx)
             return tabl[tablActuel].lienChoix[4];
     }
 
-    // Aucun choix valide, on recharge le même tableau
+    /// Aucun choix valide, on recharge le même tableau
     return tablActuel;
 }
 
@@ -94,24 +94,24 @@ void effacerEcran() {
 
 int dessinerTableau(TABLEAU tableau)
 {
-    // Fonctions
+    /// Fonctions
     void effacerEcran();
 
-    // Variables
+    /// Variables
     //short pos1=0, pos2=15;
     //COORD posTitre = {8, 0};
     CONSOLE_SCREEN_BUFFER_INFO s;
 
-    // Initialisation
+    /// Initialisation
     effacerEcran();
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
 
     GetConsoleScreenBufferInfo(console, &s);
 
-    // Algorithme
+    /// Algorithme
 
-    //  2.1 Afficher le tableau
-    //    2.1.1 Afficher l'entete
+    ///  2.1 Afficher le tableau
+    ///    2.1.1 Afficher l'entete
     cout << endl;
     cout << "		 _    _            ___                  _   ____  " << endl;
     cout << "		| | _(_)_ __ ___  / _ \\ _   _  ___  ___| |_|___ \\ " << endl;
@@ -119,37 +119,37 @@ int dessinerTableau(TABLEAU tableau)
     cout << "		|   <| | | | | | | |_| | |_| |  __/\\__ \\ |_ / __/ " << endl;
     cout << "		|_|\\_\\_|_| |_| |_|\\__\\_\\\\__,_|\\___||___/\\__|_____|" << endl;
 
-    //	  2.1.2 Afficher le texte et les actions
-    // Titre
+    ///	  2.1.2 Afficher le texte et les actions
+    /// Titre
     cout << endl;
     cout << "\t" << tableau.titre << endl << endl;
 
-    // Paragraphes
+    /// Paragraphes
     for(int i=0; i<NB_PARAG; ++i)
     {
         cout << "\t" << tableau.texteParag[i] << endl;
     }
     cout << endl << endl;
 
-    // Actions
+    /// Actions
     for(int i=0; i<NB_CHOIX; ++i)
     {
         cout << "\t  " << tableau.texteChoix[i] << endl;
     }
 
-    // Action :
+    /// Action :
     cout << endl;
     cout << "\t\t Action : ";
 
     return 0;
 }
 
-// Cette fonction charge en mémoire les tableaux
+/// Cette fonction charge en mémoire les tableaux
 int chargerTableaux(TABLEAU * tableau)
 {
-    int numT=0; // index pour les tableaux
-    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
-    // Definition du tableau 1
+    int numT=0; /// index pour les tableaux
+    ///=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    /// Definition du tableau 1
     numT++;
     tableau[numT].idTableau = numT; // numT = 0
     tableau[numT].lienChoix[0] = 0;
