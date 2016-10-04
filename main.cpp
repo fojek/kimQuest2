@@ -130,5 +130,3 @@ int dessinerTableau(TABLEAU tableau)
 
     return 0;
 }
-
-
