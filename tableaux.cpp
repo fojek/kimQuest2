@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <windows.h>
 #include "tableaux.h"
 using namespace std;
@@ -13,7 +12,7 @@ int chargerTableaux(TABLEAU * tableau)
     numT++;
     tableau[numT].idTableau = numT; // numT = 0
     tableau[numT].lienChoix[0] = 0;
-    tableau[numT].lienChoix[1] = 1;
+    tableau[numT].lienChoix[1] = 2;
     tableau[numT].lienChoix[2] = 99;
     tableau[numT].lienChoix[3] = 0;
     tableau[numT].lienChoix[4] = 0;
@@ -100,21 +99,21 @@ int chargerTableaux(TABLEAU * tableau)
     // Definition du tableau 5
     numT++;
     tableau[numT].idTableau = numT; // numT = 4
-    tableau[numT].lienChoix[0] = 1;
+    tableau[numT].lienChoix[0] = 0;
     tableau[numT].lienChoix[1] = 2;
     tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "Un arbre barre la route";
-    tableau[numT].texteParag[0] = "   Un arbre massif empêchait toute progression en ce sens. Trois";
-    tableau[numT].texteParag[1] = "possibilités ";
+    tableau[numT].lienChoix[3] = 5;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Un tronc d'arbre barre la route";
+    tableau[numT].texteParag[0] = "   Un arbre massif empêchait Kim Pendragon de poursuivre son chemin.";
+    tableau[numT].texteParag[1] = "Sans hésiter, elle repartit ... ";
     tableau[numT].texteParag[2] = "";
     tableau[numT].texteParag[3] = "";
     tableau[numT].texteParag[4] = "";
     tableau[numT].texteParag[5] = "";
-    tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
-    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[0] = "1. ... Par le centre.";
+    tableau[numT].texteChoix[1] = "2. ... Par une fissure, à droite.";
+    tableau[numT].texteChoix[2] = "3. ... À travers les branches, à gauche.";
     tableau[numT].texteChoix[3] = "";
     tableau[numT].texteChoix[4] = "";
 
@@ -122,22 +121,22 @@ int chargerTableaux(TABLEAU * tableau)
     // Definition du tableau 6
     numT++;
     tableau[numT].idTableau = numT; // numT = 5
-    tableau[numT].lienChoix[0] = 1;
-    tableau[numT].lienChoix[1] = 2;
-    tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "";
-    tableau[numT].texteParag[0] = "";
-    tableau[numT].texteParag[1] = "";
-    tableau[numT].texteParag[2] = "";
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 9;
+    tableau[numT].lienChoix[2] = 8;
+    tableau[numT].lienChoix[3] = 13;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Quelque chose bave sous le buisson";
+    tableau[numT].texteParag[0] = "   Soudain, l'attention de Kim Pendragon fut retenue par un bruit";
+    tableau[numT].texteParag[1] = "provenant d'un buisson. Les feuilles, bien que secouées fortement ";
+    tableau[numT].texteParag[2] = "par moments, masquaient la vue de notre héroine.";
     tableau[numT].texteParag[3] = "";
     tableau[numT].texteParag[4] = "";
     tableau[numT].texteParag[5] = "";
-    tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
-    tableau[numT].texteChoix[2] = "";
-    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[0] = "1. N'écoutant que son courage, elle écarte les branches ...";
+    tableau[numT].texteChoix[1] = "2. Considérant la possible présence d'araignées, elle vaporise une";
+    tableau[numT].texteChoix[2] = "   quantité déraisonable de Raid dans le buisson ...";
+    tableau[numT].texteChoix[3] = "3. Interdite, elle recule lentement sans regarder derrière elle ...";
     tableau[numT].texteChoix[4] = "";
 
     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
@@ -145,20 +144,20 @@ int chargerTableaux(TABLEAU * tableau)
     numT++;
     tableau[numT].idTableau = numT; // numT = 6
     tableau[numT].lienChoix[0] = 1;
-    tableau[numT].lienChoix[1] = 2;
-    tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "";
-    tableau[numT].texteParag[0] = "";
-    tableau[numT].texteParag[1] = "";
-    tableau[numT].texteParag[2] = "";
-    tableau[numT].texteParag[3] = "";
-    tableau[numT].texteParag[4] = "";
+    tableau[numT].lienChoix[1] = 0;
+    tableau[numT].lienChoix[2] = 0;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "L'ange de la mort";
+    tableau[numT].texteParag[0] = "   Kim Pendragon sent ses membres et sa pensée s'engour-   .-\"\"\"-.";
+    tableau[numT].texteParag[1] = "dir. Elle remarque que l'aura magique qui entourait le    /* * * *\\";
+    tableau[numT].texteParag[2] = "champignong s'est tout à fait dissipée à présent, ne     :_.-:`:-._;";
+    tableau[numT].texteParag[3] = "laissant entre ses doigts déjà froids que le très recon-     (_)";
+    tableau[numT].texteParag[4] = "naissable ANGE DE LA MORT ...                             \\|/(_)\\|/";
     tableau[numT].texteParag[5] = "";
     tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
-    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[1] = "                              GAME OVER.";
+    tableau[numT].texteChoix[2] = "               Appuyez sur <Entrée> pour recommencer ...";
     tableau[numT].texteChoix[3] = "";
     tableau[numT].texteChoix[4] = "";
 
@@ -166,20 +165,20 @@ int chargerTableaux(TABLEAU * tableau)
     // Definition du tableau 8
     numT++;
     tableau[numT].idTableau = numT; // numT = 7
-    tableau[numT].lienChoix[0] = 1;
-    tableau[numT].lienChoix[1] = 2;
-    tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "";
-    tableau[numT].texteParag[0] = "";
-    tableau[numT].texteParag[1] = "";
-    tableau[numT].texteParag[2] = "";
-    tableau[numT].texteParag[3] = "";
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "«Raid» mort ?";
+    tableau[numT].texteParag[0] = "   Le leprechaun qui se trouvait dans le buisson était à présent bien";
+    tableau[numT].texteParag[1] = "misérable. Il respirait difficilement et paraissait furieux. Une clé";
+    tableau[numT].texteParag[2] = "en or massif pendait à sa ceinture.";
+    tableau[numT].texteParag[3] = "   Voyant cela, Kim Pendragon ...";
     tableau[numT].texteParag[4] = "";
     tableau[numT].texteParag[5] = "";
-    tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
+    tableau[numT].texteChoix[0] = "1. ... S'empara de la clé en or et laissa le leprechaun pour mort.";
+    tableau[numT].texteChoix[1] = "2. ..., repentante, entreprit de ranimer la pauvre créature.";
     tableau[numT].texteChoix[2] = "";
     tableau[numT].texteChoix[3] = "";
     tableau[numT].texteChoix[4] = "";
@@ -188,20 +187,20 @@ int chargerTableaux(TABLEAU * tableau)
     // Definition du tableau 9
     numT++;
     tableau[numT].idTableau = numT; // numT = 8
-    tableau[numT].lienChoix[0] = 1;
-    tableau[numT].lienChoix[1] = 2;
-    tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "";
-    tableau[numT].texteParag[0] = "";
-    tableau[numT].texteParag[1] = "";
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 8;
+    tableau[numT].lienChoix[2] = 10;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Un leprechaun !";
+    tableau[numT].texteParag[0] = "   Le farfadet, fâché d'avoir été dérangé alors qu'il ceuillait des";
+    tableau[numT].texteParag[1] = "mûres, commenca à invectiver vivement notre héroine. Kim Pendragon ...";
     tableau[numT].texteParag[2] = "";
     tableau[numT].texteParag[3] = "";
     tableau[numT].texteParag[4] = "";
     tableau[numT].texteParag[5] = "";
-    tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
+    tableau[numT].texteChoix[0] = "1. ... Vaporisa une quantité déraisonable de raid sur le leprechaun.";
+    tableau[numT].texteChoix[1] = "2. ... Essaya d'engager la conversation avec la créature.";
     tableau[numT].texteChoix[2] = "";
     tableau[numT].texteChoix[3] = "";
     tableau[numT].texteChoix[4] = "";
@@ -210,23 +209,244 @@ int chargerTableaux(TABLEAU * tableau)
     // Definition du tableau 10
     numT++;
     tableau[numT].idTableau = numT; // numT = 9
-    tableau[numT].lienChoix[0] = 1;
-    tableau[numT].lienChoix[1] = 2;
-    tableau[numT].lienChoix[2] = 3;
-    tableau[numT].lienChoix[3] = 4;
-    tableau[numT].lienChoix[4] = 5;
-    tableau[numT].titre = "";
-    tableau[numT].texteParag[0] = "";
-    tableau[numT].texteParag[1] = "";
-    tableau[numT].texteParag[2] = "";
-    tableau[numT].texteParag[3] = "";
-    tableau[numT].texteParag[4] = "";
-    tableau[numT].texteParag[5] = "";
-    tableau[numT].texteChoix[0] = "";
-    tableau[numT].texteChoix[1] = "";
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
     tableau[numT].texteChoix[2] = "";
     tableau[numT].texteChoix[3] = "";
     tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 11
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 10
+    tableau[numT].lienChoix[0] = 1;
+    tableau[numT].lienChoix[1] = 0;
+    tableau[numT].lienChoix[2] = 0;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Malédiction";
+    tableau[numT].texteParag[0] = "   Alors qu'elle s'enfuit avec son butin mal acquis, Kim Pendragon";
+    tableau[numT].texteParag[1] = "entendit le leprechaun hurler des incantations dont elle ne put com-";
+    tableau[numT].texteParag[2] = "prendre le sens. Elle fit encore quelques enjambées avant de sentir ";
+    tableau[numT].texteParag[3] = "une raideur à sa main droite. Elle jeta un coup d'oeil et hocqueta";
+    tableau[numT].texteParag[4] = "de surprise en voyant sa main et, déjà, une partie de son bras, de-";
+    tableau[numT].texteParag[5] = "venant du même métal précieux que la clé volée...";
+    tableau[numT].texteChoix[0] = "   Horrifiée (et aurifiée), Kim Pendragon se figea petit à petit. De";
+    tableau[numT].texteChoix[1] = "la pensée trouble de ses derniers moments, Kim Pendragon se demanda";
+    tableau[numT].texteChoix[2] = "ce qu'il adviendrait d'Antoine et de Joseph ...";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "         GAME OVER! Appuyez sur <Entrée> pour recommencer.";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 12
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 11
+    tableau[numT].lienChoix[0] = 13;
+    tableau[numT].lienChoix[1] = 0;
+    tableau[numT].lienChoix[2] = 0;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "L'espoir renaît";
+    tableau[numT].texteParag[0] = "   À deux, Bob et Kim Pendragon eurent tôt fait de remplir la besace";
+    tableau[numT].texteParag[1] = "du leprechaun. Content, ce dernier l'invita à le suivre jusque chez";
+    tableau[numT].texteParag[2] = "lui.";
+    tableau[numT].texteParag[3] = "   « Grmmblbl! Je n'ai peut-être pas vu ceux que tu cherches, grrr!";
+    tableau[numT].texteParag[4] = "mais je sais où se trouve quelqu'un qui pourra t'aider. Aharr ! »";
+    tableau[numT].texteParag[5] = "   Kim Pendragon sentit son courage se raffermir. Peut-être aurait";
+    tableau[numT].texteChoix[0] = "elle agi différemment, si elle avait su vers qui l'emmenait son vert";
+    tableau[numT].texteChoix[1] = "compagnon ...";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "                     CHAPTER ONE - COMPLETED!";
+    tableau[numT].texteChoix[4] = "              Appuyez sur <Entrée> pour continuer";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 13
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 12
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Chapitre deuxième";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gentiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 14
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 13
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 15
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 14
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 16
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 15
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 17
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 16
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 18
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 17
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 19
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 18
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
+    //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=//
+    // Definition du tableau 20
+    numT++;
+    tableau[numT].idTableau = numT; // numT = 19
+    tableau[numT].lienChoix[0] = 0;
+    tableau[numT].lienChoix[1] = 11;
+    tableau[numT].lienChoix[2] = 12;
+    tableau[numT].lienChoix[3] = 0;
+    tableau[numT].lienChoix[4] = 0;
+    tableau[numT].titre = "Tentation (mais pas facination, ni hésitation)";
+    tableau[numT].texteParag[0] = "   Calmé, le leprechaun, qui s'appelait Bob, répondit aux interroga-";
+    tableau[numT].texteParag[1] = "tions de Kim Pendragon. « Grmblbl! Antoine, Joseph? Frr! Foi de Bob,";
+    tableau[numT].texteParag[2] = "voilà des noms étranges. Ils ne sont pas passés par ici! Grrr! Ah, si";
+    tableau[numT].texteParag[3] = "seulement je pouvais terminer de ramasser ces mûres! Arr! »";
+    tableau[numT].texteParag[4] = "   Il gesticulait tout en parlant, ce qui faisait sauter la clé en";
+    tableau[numT].texteParag[5] = "or massif pendant à sa ceinture.";
+    tableau[numT].texteChoix[0] = "1. Kim Pendragon s'empara de la clé en or en s'enfuit.";
+    tableau[numT].texteChoix[1] = "2. Elle décida, gntiment, d'aider Bob à terminer sa récolte.";
+    tableau[numT].texteChoix[2] = "";
+    tableau[numT].texteChoix[3] = "";
+    tableau[numT].texteChoix[4] = "";
+
 
 
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//

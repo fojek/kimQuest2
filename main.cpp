@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
 #include <windows.h>
+#include <locale>
 #include "tableaux.h"
 using namespace std;
 
 int main()
 {
+    std::setlocale(LC_ALL, "fr_FR.UTF-8");
+
     /// Fonctions
     int dessinerTableau(TABLEAU); /// Fonction pour dessiner un tableau
 
@@ -37,7 +40,7 @@ int main()
     } while (tableauActuel!=99);
 
     return 0;
-}  
+}
 
 int effectuerAction(TABLEAU * tabl, int tablActuel, int chx)
 {
