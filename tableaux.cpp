@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <windows.h>
 #include "tableaux.h"
 using namespace std;

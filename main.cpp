@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <windows.h>
 #include "tableaux.h"
 using namespace std;
@@ -36,7 +37,7 @@ int main()
     } while (tableauActuel!=99);
 
     return 0;
-}
+}  
 
 int effectuerAction(TABLEAU * tabl, int tablActuel, int chx)
 {
