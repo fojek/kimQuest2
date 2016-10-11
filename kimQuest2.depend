@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1475607045 source:c:\users\mfortier\desktop\kimquest2\main.cpp
+1476044595 source:c:\users\mfortier\desktop\kimquest2\main.cpp
 	<iostream>
 	<string>
 	<windows.h>
+	<locale>
 	"tableaux.h"
 
 1475606933 c:\users\mfortier\desktop\kimquest2\tableaux.h
 
-1475615037 source:c:\users\mfortier\desktop\kimquest2\tableaux.cpp
+1476045572 source:c:\users\mfortier\desktop\kimquest2\tableaux.cpp
 	<iostream>
 	<windows.h>
 	"tableaux.h"

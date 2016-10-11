@@ -124,7 +124,7 @@ int dessinerTableau(TABLEAU tableau)
     /// Actions
     for(int i=0; i<NB_CHOIX; ++i)
     {
-        cout << "\t  " << tableau.texteChoix[i] << endl;
+        cout << "\t" << tableau.texteChoix[i] << endl;
     }
 
     /// Action :
